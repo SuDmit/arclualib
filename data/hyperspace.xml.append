@@ -5,27 +5,27 @@
 <version>^1.8.0</version>
 
 <mod:findLike type="scripts" limit="1">
-    <mod-append:script>data/scripts/util.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/util.lua</mod-append:script>
 
-    <mod-append:script>data/scripts/arclua_DataInit.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/arclua_DataInit.lua</mod-append:script>
     
     
-    <mod-append:script>data/scripts/tags/hack.lua</mod-append:script>
-    <mod-append:script>data/scripts/tags/teleportBeam.lua</mod-append:script>
-    <mod-append:script>data/scripts/tags/shieldDamage.lua</mod-append:script>
-    <mod-append:script>data/scripts/tags/aoeDamage.lua</mod-append:script>
-    <mod-append:script>data/scripts/tags/overheat.lua</mod-append:script>
-    <mod-append:script>data/scripts/tags/beamReplacement.lua</mod-append:script>
-    <mod-append:script>data/scripts/tags/diffusion.lua</mod-append:script>
-    <mod-append:script>data/scripts/tags/fractionalDamage.lua</mod-append:script>
-    <mod-append:script>data/scripts/tags/scatter.lua</mod-append:script>
-    <mod-append:script>data/scripts/tags/manningWeapon.lua</mod-append:script>
-    <mod-append:script>data/scripts/tags/shieldBeamable.lua</mod-append:script>
-    <mod-append:script>data/scripts/tags/ammo.lua</mod-append:script>
-    <mod-append:script>data/scripts/tags/chainShot.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/tags/hack.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/tags/teleportBeam.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/tags/shieldDamage.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/tags/aoeDamage.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/tags/overheat.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/tags/beamReplacement.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/tags/diffusion.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/tags/fractionalDamage.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/tags/scatter.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/tags/manningWeapon.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/tags/shieldBeamable.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/tags/ammo.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/tags/chainShot.lua</mod-append:script>
 
 
-    <mod-append:script>data/scripts/arclua_DataRead.lua</mod-append:script>
+    <mod-append:script>data/arcScripts/arclua_DataRead.lua</mod-append:script>
    
 </mod:findLike>
 
