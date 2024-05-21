@@ -40,7 +40,8 @@
     -- PARSER --
     ------------
     local function parser(node)
-        local shieldBeamable = true
+        local shieldBeamable = {}
+        shieldBeamable.doShieldBeam = true
         return shieldBeamable
     end
 
@@ -52,7 +53,7 @@
             if shipManager:HasSystem(0) then
                 local shieldPower = shipManager.shieldSystem.shields.power
                 local shieldBeamable = weaponInfo[projectile.extend.name]["shieldBeamable"]
-                if shieldBeamable then
+                if shieldBeamable.doShieldBeam then
                     if projectile.damage.iDamage > 1 then
                         local halfDamage = math.floor(projectile.damage.iDamage/2)
                         print(halfDamage)
