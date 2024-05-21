@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FTL>
+<augBlueprint name="ARC_SUPER_HULL">
+	<title>Super hull</title>
+	<desc> </desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+</FTL>
