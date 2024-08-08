@@ -58,7 +58,7 @@
                         local halfDamage = math.floor(projectile.damage.iDamage/2)
                         --print(halfDamage)
                         if not (shieldPower.super.first > 0) then
-                            shipManager.shieldSystem:CollisionReal(projectile.position.x, projectile.position.y, Hyperspace.Damage(), true)
+                            --shipManager.shieldSystem:CollisionReal(projectile.position.x, projectile.position.y, Hyperspace.Damage(), true)
                             shieldPower.first = math.max(0, shieldPower.first - halfDamage)
                             --projectile:Kill()
                         end
