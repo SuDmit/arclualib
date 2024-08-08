@@ -266,7 +266,9 @@ script.on_internal_event(Defines.InternalEvents.CREW_LOOP, function(crewmem)
             if not commandGui.bPaused then 
                 teleTable.tpTime = math.max(teleTable.tpTime - Hyperspace.FPS.SpeedFactor/16, 0)
                 if teleTable.tpTime == 0 then
-                    crewmem.extend:InitiateTeleport(crewmem.iShipId,0,0)
+                    if crewmem.intruder == true then
+                        crewmem.extend:InitiateTeleport(crewmem.iShipId,0,0)
+                    end
                     teleTable.tpTime = nil
                 end
             end

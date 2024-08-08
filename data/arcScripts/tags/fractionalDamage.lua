@@ -155,7 +155,7 @@ local function logic()
 					hullTable.hullDamage = fractionalDamage.iDamage
 				end
 	    	end
-	    	if (fractionalDamage.iDamage + fractionalDamage.iSystemDamage or fractionalDamage.iIonDamage) and shipManager:GetSystemInRoom(targetRoom) then
+	    	if (fractionalDamage.iDamage + fractionalDamage.iSystemDamage > 0 or fractionalDamage.iIonDamage) and shipManager:GetSystemInRoom(targetRoom) then
 	    		local system = shipManager:GetSystemInRoom(targetRoom)
 	    		local sysTable = userdata_table(system, "mods.arclua.sysDamage")
 	    		local fDamage = Hyperspace.Damage()

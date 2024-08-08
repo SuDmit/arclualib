@@ -56,7 +56,7 @@ local function logic()
         local teleportBeam = weaponInfo[projectile.extend.name]["teleportBeam"]
         if teleportBeam.doTeleport then
             for i, crewmem in ipairs(get_ship_crew_point(shipManager, location.x, location.y)) do
-                if not crewmem:IsDrone() then
+                if not crewmem:IsDrone() and userdata_table(crewmem, "mods.arc.crewAbduction").tpTime == nil then
                     userdata_table(crewmem, "mods.arc.crewAbduction").tpTime = teleportBeam.duration
                     crewmem.extend:InitiateTeleport(otherShip.iShipId,weaponRoomID,0)
                 end
