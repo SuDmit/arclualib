@@ -56,11 +56,13 @@
                 if shieldBeamable.doShieldBeam then
                     if projectile.damage.iDamage > 1 then
                         local halfDamage = math.floor(projectile.damage.iDamage/2)
+
                         --print(halfDamage)
+                        --print(shieldPower.first)
                         if not (shieldPower.super.first > 0) then
                             --shipManager.shieldSystem:CollisionReal(projectile.position.x, projectile.position.y, Hyperspace.Damage(), true)
                             shieldPower.first = math.max(0, shieldPower.first - halfDamage)
-                            --projectile:Kill()
+                            projectile:Kill()
                         end
                     end
                 end
